@@ -154,7 +154,7 @@ async def create_embedding(request: EmbeddingRequest):
             detail="Text cannot be empty"
         )
 
-    logger.info("Input text: %s", text)
+    logger.info("Input text...")
 
     response = client.embeddings.create(
         model="text-embedding-3-large",
